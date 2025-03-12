@@ -1,0 +1,56 @@
+#################################################################################################################
+#                                                                                                               #
+# Config file with parameters entered into GWAS standardization and QC script.                                  #
+#                                                                                                               #
+# Params:                                                                                                       #
+#                                                                                                               #
+#  path: absolute path to directory/folder containing GWAS files                                                #
+#                                                                                                               #
+#  ancestry:                                                                                                    #
+#                                                                                                               #
+#     The reference allele ancestry of the GWAS file.                                                           #
+#     The ancestry format is in three letter form as shown below                                                #
+#       EAS - East Asians                                                                                       #
+#       EUR - Europeans                                                                                         #
+#       SAS - South Asians                                                                                      #
+#       AMR - South Americans                                                                                   #
+#       AFR - Africans                                                                                          #
+#       PAN - Pangenome                                                                                         #
+#                                                                                                               #
+#                                                                                                               #
+#  GWAS File Column Labels:                                                                                     #
+#                                                                                                               #
+#  The specific column name used within the GWAS file for the specified data points.                            #
+#  In cases where the listed column is not present in your data set, please leave it blank.                     #
+#                                                                                                               #
+#                                                                                                               #
+#################################################################################################################
+
+# path to GWAS file
+path: '/PHShome/ap1231/lsf/GWAS_QC/'
+
+# reference allele ancestry to use for harmonization
+ancestry: 'EUR'
+  
+# GWAS file column labels
+col_names:
+  snpid : ''
+  rsid: 'SNP_ID'
+  chromosome: 'chrom'
+  base_pair_position: 'pos'
+  effect_allele: 'ea'
+  non_effect_allele: ''
+  reference_allele: 'ref'
+  alternative_allele: 'alt'
+  effect_allele_frequency: 'af'
+  minor_allele_frequency: ''
+  sample_size: 'num_samples'
+  beta: ''
+  standard_error: ''
+  p_value: 'pval'
+  odds_ratio: 'or'
+  direction: 'direction'
+  I2: 'i2'
+  N_CONTROL: ''
+  N_CASE: ''
+
